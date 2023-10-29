@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Artist Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Artist Portfolio
+        </h1>
+    </header>
+    <section class="gallery">
+        <div class="artwork">
+        </div>
+    </section>
+    <section class="upload-form">
+        <h2>upload your Artwork</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="artwork" accept="image/*" required>
+            <input type="text" name="tittle" placeholder="Tittle" required>
+            <input type="text" name="description" placeholder="Description" required>
+            <button type="submit">upload</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Artist Portfolio</p>
+    </footer>
+
+   
+</body>
+</html>
